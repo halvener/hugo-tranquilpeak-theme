@@ -1,5 +1,7 @@
 # Tranquilpeak
 
+__Forked from: https://github.com/kakawait/hugo-tranquilpeak-theme__
+
 [![Twitter Follow](https://img.shields.io/twitter/follow/thibaudlepretre.svg?style=social&label=%40thibaudlepretre)](https://twitter.com/intent/follow?screen_name=thibaudlepretre)
 
 A gorgeous responsive theme for Hugo blog framework.
