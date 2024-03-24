@@ -9,6 +9,7 @@
                {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
         <section class="postShorten-group main-content-wrap">
+          <img style="height: 200px; display: block; margin-left: auto; margin-right: auto;" src="{{ site.Params.headerImages.homePage }}" />
           {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections ) }}
           {{ range $paginator.Pages }}
             {{ .Render "summary" }}

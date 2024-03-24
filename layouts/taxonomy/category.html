@@ -13,7 +13,7 @@
         {{ if or (not (isset .Site.Params "categoryPagination")) (.Site.Params.categoryPagination) }}
           <section class="postShorten-group main-content-wrap">
             {{ if eq .Title "Personality Couch Podcast" }}
-                <img style="width: 200px; display: block; margin-left: auto; margin-right: auto;" src="{{ site.Params.headers.categoryImagePersonalityCouchPodcast }}" />
+                <img style="width: 200px; display: block; margin-left: auto; margin-right: auto;" src="{{ site.Params.headerImages.categoryPersonalityCouchPodcast }}" />
             {{ end }}
             {{ $paginator := .Paginate (where .Data.Pages "Type" "in" site.Params.mainSections) }}
             {{ range $paginator.Pages }}
