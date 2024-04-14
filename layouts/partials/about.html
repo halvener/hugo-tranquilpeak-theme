@@ -18,11 +18,39 @@
       </div>
     {{ end }}
     {{ with .Site.Author.location }}
-      <div id="about-card-location">
-        <i class="fa fa-map-marker-alt"></i>
-        <br/>
-        {{ . }}
-      </div>
+    <div id="about-card-location">
+      <i class="fa fa-map-marker-alt"></i>
+      <br/>
+      {{ . }}
+    </div>
     {{ end }}
+    <div style="text-align: center; " class="podcast-apps"><p class="podcast-listen">Listen on:</p>
+      <ul class="podcast-apps">
+        {{ with .Site.Author.apple }}
+          <li class="podcast-apps" style="display: inline-block; margin: 0 5px; padding-left: 0; width: 36px;"><a href="{{ . }}" target="_blank" rel="noreferrer noopener"><img style="width: 36px;" src="https://d8g345wuhgd7e.cloudfront.net/site/images/admin5/apple-podcast.png" alt="Apple Podcasts"></a></li>
+        {{ end }}
+        {{ with .Site.Author.podbean }}
+          <li class="podcast-apps" style="display: inline-block; margin: 0 5px; padding-left: 0; width: 36px;"><a href="{{ . }}" target="_blank" rel="noreferrer noopener"><img style="width: 36px;" src="https://d8g345wuhgd7e.cloudfront.net/site/images/admin5/podbean-app.png" alt="Podbean App"></a></li>
+        {{ end }}
+        {{ with .Site.Author.spotify }}
+          <li class="podcast-apps" style="display: inline-block; margin: 0 5px; padding-left: 0; width: 36px;"><a href="{{ . }}" target="_blank" rel="noreferrer noopener"><img style="width: 36px;" src="https://d8g345wuhgd7e.cloudfront.net/site/images/admin5/spotify.png" alt="Spotify"></a></li>
+        {{ end }}
+        {{ with .Site.Author.amazon }}
+          <li class="podcast-apps" style="display: inline-block; margin: 0 5px; padding-left: 0; width: 36px;"><a href="{{ . }}" target="_blank" rel="noreferrer noopener"><img style="width: 36px;" src="https://d8g345wuhgd7e.cloudfront.net/site/images/admin5/AmazonMusic.png" alt="Amazon Music"></a></li>
+        {{ end }}
+        {{ with .Site.Author.iheart }}
+          <li class="podcast-apps" style="display: inline-block; margin: 0 5px; padding-left: 0; width: 36px;"><a href="{{ . }}" target="_blank" rel="noreferrer noopener"><img style="width: 36px;" src="https://d8g345wuhgd7e.cloudfront.net/site/images/admin5/iHeartRadio.png" alt="iHeartRadio"></a></li>
+        {{ end }}
+        {{ with .Site.Author.podchaser }}
+          <li class="podcast-apps" style="display: inline-block; margin: 0 5px; padding-left: 0; width: 36px;"><a href="{{ . }}" target="_blank" rel="noreferrer noopener"><img style="width: 36px;" src="https://d8g345wuhgd7e.cloudfront.net/site/images/admin5/Podchaser.webp" alt="Podchaser"></a></li>
+        {{ end }}
+        {{ with .Site.Author.boomplay }}
+          <li class="podcast-apps" style="display: inline-block; margin: 0 5px; padding-left: 0; width: 36px;"><a href="{{ . }}" target="_blank" rel="noreferrer noopener"><img style="width: 36px;" src="https://d8g345wuhgd7e.cloudfront.net/site/images/admin5/BoomPlay.png" alt="BoomPlay"></a></li>
+        {{ end }}
+        {{ with .Site.Author.rss }}
+          <li class="podcast-apps" style="display: inline-block; margin: 0 5px; padding-left: 0; width: 36px;"><a href="{{ . }}" target="_blank"><img style="width: 36px;" src="/img/rss-icon-100.webp"/></a></li>
+        {{ end }}
+      </ul>
+    </div>
   </div>
 </div>
